@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/J0J0C0DING/team-portfolio-generator#readme",
   "dependencies": {
-    "inquirer": "^9.0.0",
+    "inquirer": "^7.2.3",
     "jest": "^28.1.2"
   }
 }
