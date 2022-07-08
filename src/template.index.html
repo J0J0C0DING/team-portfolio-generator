@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" />
+  <link href="/open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./template.styles.css" />
+  <title>Team Page</title>
+</head>
+<body>
+  <header class="text-bg-danger text-center p-4">
+    <div class="align-items-center">
+      <h1>My Team</h1>
+    </div>
+  </header>
+  <section>
+    <div class="d-flex flex-wrap mt-5 justify-content-center align-items-center">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col-auto mx-auto">
+          <div class="card" style="width: 14rem">
+            <div class="card-header text-bg-primary">
+              <h5 class="card-title">
+                Name <br />
+                <img class="icon filter-white" src="./svg/briefcase.svg" alt="briefcase icon"> Manager
+              </h5>
+            </div>
+            <div class="card-body">
+              <div class="list-group list-group-flush">
+                <li class="list-group-item">ID: ${}</li>
+                <li class="list-group-item">Email: <a href=`mailto:${}`>${}</a></li>
+                <li class="list-group-item">Office Number: ${}</li>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-auto mx-auto">
+          <div class="card" style="width: 14rem">
+            <div class="card-header text-bg-primary">
+              <h5 class="card-title">
+                Name <br />
+                <img class="icon filter-white" src="./svg/code.svg" alt="coding icon"> Engineer
+              </h5>
+            </div>
+            <div class="card-body">
+              <div class="list-group list-group-flush">
+                <li class="list-group-item">ID: ${}</li>
+                <li class="list-group-item">Email: <a href=`mailto:${}`>${}</a></li>
+                <li class="list-group-item">GitHub: <a href=`https://www.github.com/${}`>${}</a></li>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-auto mx-auto">
+          <div class="card" style="width: 14rem">
+            <div class="card-header text-bg-primary">
+              <h5 class="card-title">
+                Name <br />
+                <img class="icon filter-white" src="./svg/pencil.svg" alt="pencil icon"> Intern
+              </h5>
+            </div>
+            <div class="card-body">
+              <div class="list-group list-group-flush">
+                <li class="list-group-item">ID: ${}</li>
+                <li class="list-group-item">Email: <a href=`mailto:${}`>${}</a></li>
+                <li class="list-group-item">School: ${}</li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+</body>
+</html>

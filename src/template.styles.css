@@ -1,0 +1,17 @@
+.body {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  height: 100px;
+}
+
+.icon {
+  height: 15px;
+}
+
+/*To create filter on black svgs https://codepen.io/sosuke/pen/Pjoqqp */
+.filter-white {
+  filter: invert(100%) sepia(6%) saturate(131%) hue-rotate(194deg) brightness(115%) contrast(90%);
+}
