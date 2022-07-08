@@ -9,6 +9,8 @@ const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
 
+const generatePage = require('./src/generatePage');
+
 const teamArray = [];
 
 let addTeamName = () => {
@@ -56,11 +58,28 @@ let addTeamMember = () => {
     if (confirmAddTeamMember) {
       return addTeamMember(teamArray);
     } else {
-      console.log(teamArray);
       return teamArray;
     }
   });
 };
-addTeamName().then(addManager).then(addTeamMember);
-// addManager();
-// addTeamMember();
+
+const writeFile = data => {
+  fs.writeFile('./dist/index.html', data, err => {
+    if (err) {
+      console.log(err);
+      return;
+    }
+    console.log('Your team page has been created! Checkout the /dist folder!');
+  });
+};
+
+addTeamName()
+  .then(addManager)
+  .then(addTeamMember)
+  .then(data => {
+    console.log(data);
+    return generatePage(data);
+  })
+  .then(data => {
+    return writeFile(data);
+  });
