@@ -4,6 +4,10 @@
 
 Node application that allows users to build a development team's portfolio. Simply answer the prompts in the CLI to generate a HTML file with entered information!
 
+#### Walkthrough video
+
+[Vimeo](https://vimeo.com/728878504)
+
 ## Table of Contents
 
 - [Installation](#installation)
